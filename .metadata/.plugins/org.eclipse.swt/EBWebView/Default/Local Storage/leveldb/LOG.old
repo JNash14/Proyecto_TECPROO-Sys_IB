@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 2025/09/12-22:53:00.328 1bd8 Reusing MANIFEST C:\Users\Chamoy\Desktop\Minimarket - tecpro\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
 2025/09/12-22:53:00.333 1bd8 Recovering log #3
 2025/09/12-22:53:00.334 1bd8 Reusing old log C:\Users\Chamoy\Desktop\Minimarket - tecpro\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+=======
+<<<<<<< HEAD
+2025/09/12-22:22:03.636 658 Creating DB C:\Users\USUARIO\OneDrive\Escritorio\PROYECTO POO1\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/09/12-22:22:03.673 658 Reusing MANIFEST C:\Users\USUARIO\OneDrive\Escritorio\PROYECTO POO1\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+=======
+2025/09/12-22:23:02.561 68b4 Creating DB C:\Users\FABRICIO\Desktop\Proyecto Minimarket\Nueva carpeta\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/09/12-22:23:02.650 68b4 Reusing MANIFEST C:\Users\FABRICIO\Desktop\Proyecto Minimarket\Nueva carpeta\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+>>>>>>> 773c6a06d98b03387c536a4a8f44d6a9c3884234
+>>>>>>> 2b1e7c8859fbe468b4d05bb3b1f3848cc4d8a850

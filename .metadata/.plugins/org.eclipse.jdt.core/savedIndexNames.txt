@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 INDEX VERSION 1.134+C:\Users\Chamoy\Desktop\Minimarket - tecpro\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.jdt.core
+=======
+INDEX VERSION 1.134+C:\Users\USUARIO\OneDrive\Escritorio\PROYECTO POO1\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.jdt.core
+>>>>>>> 2b1e7c8859fbe468b4d05bb3b1f3848cc4d8a850
 1865797976.index
+4004721005.index
 3709699690.index
