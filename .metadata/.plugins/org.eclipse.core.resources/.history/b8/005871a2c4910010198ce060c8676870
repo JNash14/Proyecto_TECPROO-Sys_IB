@@ -1,0 +1,16 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import Clases.Empleados;
+
+public class ArregloEmpleados {
+	public ArrayList<Empleados>emp;
+	public ArregloEmpleados() {
+		emp=new ArrayList<Empleados>();
+	}
+	public void Anadir(Empleado) {
+		Empleados ad = new Empleados(nom, ape, us, con);
+        emp.add(ad);
+	}
+}

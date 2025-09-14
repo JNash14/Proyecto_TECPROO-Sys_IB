@@ -16,11 +16,13 @@ public class Form_EMPLEADOS extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
+	private JTextField txtNom;
+	private JTextField txtApe;
+	private JTextField txtUs;
+	private JTextField txtCon;
+	private JButton btnNewButton_1;
+	private JScrollPane scrollPane;
+	private JTextArea txtS;
 
 	/**
 	 * Launch the application.
@@ -58,20 +60,20 @@ public class Form_EMPLEADOS extends JFrame {
 		lblNewLabel_1.setBounds(10, 36, 46, 14);
 		contentPane.add(lblNewLabel_1);
 		
-		textField = new JTextField();
-		textField.setBounds(66, 8, 86, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtNom = new JTextField();
+		txtNom.setBounds(66, 8, 86, 20);
+		contentPane.add(txtNom);
+		txtNom.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setBounds(66, 33, 86, 20);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
+		txtApe = new JTextField();
+		txtApe.setBounds(66, 33, 86, 20);
+		contentPane.add(txtApe);
+		txtApe.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setBounds(66, 58, 86, 20);
-		contentPane.add(textField_2);
-		textField_2.setColumns(10);
+		txtUs = new JTextField();
+		txtUs.setBounds(66, 58, 86, 20);
+		contentPane.add(txtUs);
+		txtUs.setColumns(10);
 		
 		JLabel lblNewLabel_2 = new JLabel("Usuario");
 		lblNewLabel_2.setBounds(10, 61, 46, 14);
@@ -81,42 +83,30 @@ public class Form_EMPLEADOS extends JFrame {
 		lblNewLabel_3.setBounds(10, 86, 56, 14);
 		contentPane.add(lblNewLabel_3);
 		
-		textField_3 = new JTextField();
-		textField_3.setBounds(66, 83, 86, 20);
-		contentPane.add(textField_3);
-		textField_3.setColumns(10);
-		
-		JLabel lblNewLabel_4 = new JLabel("Puesto");
-		lblNewLabel_4.setBounds(10, 111, 46, 14);
-		contentPane.add(lblNewLabel_4);
-		
-		textField_4 = new JTextField();
-		textField_4.setBounds(68, 110, 86, 20);
-		contentPane.add(textField_4);
-		textField_4.setColumns(10);
+		txtCon = new JTextField();
+		txtCon.setBounds(66, 83, 86, 20);
+		contentPane.add(txtCon);
+		txtCon.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Añadir");
-		btnNewButton.setBounds(191, 32, 89, 23);
+		btnNewButton.setBounds(190, 21, 89, 23);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Borrar");
-		btnNewButton_1.setBounds(310, 32, 89, 23);
-		contentPane.add(btnNewButton_1);
-		
-		JButton btnNewButton_2 = new JButton("Modificar");
-		btnNewButton_2.setBounds(191, 61, 89, 23);
-		contentPane.add(btnNewButton_2);
-		
 		JButton btnNewButton_3 = new JButton("Lista");
-		btnNewButton_3.setBounds(310, 57, 89, 23);
+		btnNewButton_3.setBounds(190, 57, 89, 23);
 		contentPane.add(btnNewButton_3);
 		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(20, 136, 404, 114);
+		btnNewButton_1 = new JButton("Buscar");
+		btnNewButton_1.setBounds(190, 86, 89, 23);
+		contentPane.add(btnNewButton_1);
+		
+		scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 121, 414, 129);
 		contentPane.add(scrollPane);
 		
-		JTextArea textArea = new JTextArea();
-		scrollPane.setViewportView(textArea);
-
+		txtS = new JTextArea();
+		scrollPane.setViewportView(txtS);
+		
+		
 	}
 }
