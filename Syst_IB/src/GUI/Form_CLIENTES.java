@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JScrollPane;
 import javax.swing.JButton;
+import javax.swing.JTextArea;
 
 public class Form_CLIENTES extends JFrame {
 
@@ -43,30 +44,30 @@ public class Form_CLIENTES extends JFrame {
 	public Form_CLIENTES() {
 		setTitle("CLIENTES");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 577, 439);
+		setBounds(100, 100, 577, 531);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Apellidos:");
-		lblNewLabel.setBounds(25, 25, 46, 14);
+		lblNewLabel.setBounds(25, 25, 64, 14);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNombres = new JLabel("Nombres:");
-		lblNombres.setBounds(25, 49, 46, 14);
+		lblNombres.setBounds(25, 49, 64, 14);
 		contentPane.add(lblNombres);
 		
 		JLabel lblDni = new JLabel("DNI:");
-		lblDni.setBounds(25, 74, 46, 14);
+		lblDni.setBounds(25, 74, 64, 14);
 		contentPane.add(lblDni);
 		
 		JLabel lblCelular = new JLabel("Celular:");
-		lblCelular.setBounds(25, 99, 46, 14);
+		lblCelular.setBounds(25, 99, 64, 14);
 		contentPane.add(lblCelular);
 		
 		JLabel lblDireccin = new JLabel("Dirección");
-		lblDireccin.setBounds(25, 124, 46, 14);
+		lblDireccin.setBounds(25, 124, 64, 14);
 		contentPane.add(lblDireccin);
 		
 		textField = new JTextField();
@@ -95,12 +96,35 @@ public class Form_CLIENTES extends JFrame {
 		contentPane.add(textField_4);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(25, 183, 503, 186);
+		scrollPane.setBounds(25, 270, 503, 186);
 		contentPane.add(scrollPane);
 		
-		JButton btnNewButton = new JButton("REGISTRAR");
-		btnNewButton.setBounds(395, 49, 89, 48);
-		contentPane.add(btnNewButton);
+		JTextArea textArea = new JTextArea();
+		scrollPane.setViewportView(textArea);
+		
+		JButton btnRegistrar = new JButton("REGISTRAR");
+		btnRegistrar.setBounds(395, 49, 103, 49);
+		contentPane.add(btnRegistrar);
+		
+		JButton btnListar = new JButton("Listar");
+		btnListar.setBounds(25, 216, 89, 31);
+		contentPane.add(btnListar);
+		
+		JButton btnAdicionar = new JButton("Adicionar");
+		btnAdicionar.setBounds(124, 216, 89, 31);
+		contentPane.add(btnAdicionar);
+		
+		JButton btnBuscar = new JButton("Buscar");
+		btnBuscar.setBounds(223, 216, 89, 31);
+		contentPane.add(btnBuscar);
+		
+		JButton btnModificar = new JButton("Modificar");
+		btnModificar.setBounds(330, 216, 89, 31);
+		contentPane.add(btnModificar);
+		
+		JButton btnEliminar = new JButton("Eliminar");
+		btnEliminar.setBounds(439, 216, 89, 31);
+		contentPane.add(btnEliminar);
 
 	}
 }

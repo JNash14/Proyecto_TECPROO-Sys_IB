@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
-public class form_Empleados extends JFrame {
+public class Form_EMPLEADOS extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -29,7 +29,7 @@ public class form_Empleados extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					form_Empleados frame = new form_Empleados();
+					Form_EMPLEADOS frame = new Form_EMPLEADOS();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -41,7 +41,7 @@ public class form_Empleados extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public form_Empleados() {
+	public Form_EMPLEADOS() {
 		setTitle("Empleados");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);

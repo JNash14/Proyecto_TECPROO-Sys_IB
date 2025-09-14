@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class stockProducto extends JFrame {
+public class Form_StockProducto extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -26,7 +26,7 @@ public class stockProducto extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					stockProducto frame = new stockProducto();
+					Form_StockProducto frame = new Form_StockProducto();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -38,7 +38,7 @@ public class stockProducto extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public stockProducto() {
+	public Form_StockProducto() {
 		setTitle("Stock de Productos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
