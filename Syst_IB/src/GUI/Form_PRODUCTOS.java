@@ -25,19 +25,17 @@ public class Form_PRODUCTOS extends JFrame {
 	private JLabel lblNewLabel_6;
 	private JLabel lblNewLabel_7;
 	private JLabel lblNewLabel_4;
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
+	private JTextField txtCod;
+	private JTextField txtNomP;
+	private JTextField txtPreV;
+	private JTextField txtPreC;
+	private JTextField txtCate;
+	private JTextField txtCant;
 	private JScrollPane scrollPane;
-	private JTextArea textArea;
-	private JButton btnNewButton;
+	private JTextArea txtS;
+	private JButton btnLista;
 	private JButton btnAgregar;
 	private JButton btnBuscar;
-	private JButton btnModificar;
-	private JButton btnEliminar;
 
 	/**
 	 * Launch the application.
@@ -101,72 +99,62 @@ public class Form_PRODUCTOS extends JFrame {
 		lblNewLabel_7.setBounds(269, 143, 83, 14);
 		contentPane.add(lblNewLabel_7);
 		
-		lblNewLabel_4 = new JLabel("Porductos");
+		lblNewLabel_4 = new JLabel("Productos");
 		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		lblNewLabel_4.setBounds(33, 26, 130, 38);
 		contentPane.add(lblNewLabel_4);
 		
-		textField = new JTextField();
-		textField.setBounds(148, 86, 86, 20);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtCod = new JTextField();
+		txtCod.setBounds(148, 88, 86, 20);
+		contentPane.add(txtCod);
+		txtCod.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(148, 111, 86, 20);
-		contentPane.add(textField_1);
+		txtNomP = new JTextField();
+		txtNomP.setColumns(10);
+		txtNomP.setBounds(148, 111, 86, 20);
+		contentPane.add(txtNomP);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(148, 137, 86, 20);
-		contentPane.add(textField_2);
+		txtPreV = new JTextField();
+		txtPreV.setColumns(10);
+		txtPreV.setBounds(148, 137, 86, 20);
+		contentPane.add(txtPreV);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(358, 86, 86, 20);
-		contentPane.add(textField_3);
+		txtPreC = new JTextField();
+		txtPreC.setColumns(10);
+		txtPreC.setBounds(358, 86, 86, 20);
+		contentPane.add(txtPreC);
 		
-		textField_4 = new JTextField();
-		textField_4.setColumns(10);
-		textField_4.setBounds(358, 111, 86, 20);
-		contentPane.add(textField_4);
+		txtCate = new JTextField();
+		txtCate.setColumns(10);
+		txtCate.setBounds(358, 111, 86, 20);
+		contentPane.add(txtCate);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(358, 136, 86, 20);
-		contentPane.add(textField_5);
+		txtCant = new JTextField();
+		txtCant.setColumns(10);
+		txtCant.setBounds(358, 136, 86, 20);
+		contentPane.add(txtCant);
 		
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(33, 268, 414, 147);
+		scrollPane.setBounds(55, 268, 414, 147);
 		contentPane.add(scrollPane);
 		
-		textArea = new JTextArea();
-		scrollPane.setViewportView(textArea);
+		txtS = new JTextArea();
+		scrollPane.setViewportView(txtS);
 		
-		btnNewButton = new JButton("Listar");
-		btnNewButton.setFont(new Font("Dialog", Font.PLAIN, 14));
-		btnNewButton.setBounds(10, 198, 89, 23);
-		contentPane.add(btnNewButton);
+		btnLista = new JButton("Lista");
+		btnLista.setFont(new Font("Dialog", Font.PLAIN, 14));
+		btnLista.setBounds(89, 199, 89, 23);
+		contentPane.add(btnLista);
 		
-		btnAgregar = new JButton("Agregar");
+		btnAgregar = new JButton("Añadir");
 		btnAgregar.setFont(new Font("Dialog", Font.PLAIN, 14));
-		btnAgregar.setBounds(109, 198, 89, 23);
+		btnAgregar.setBounds(187, 199, 89, 23);
 		contentPane.add(btnAgregar);
 		
 		btnBuscar = new JButton("Buscar");
 		btnBuscar.setFont(new Font("Dialog", Font.PLAIN, 14));
-		btnBuscar.setBounds(208, 198, 89, 23);
+		btnBuscar.setBounds(286, 199, 89, 23);
 		contentPane.add(btnBuscar);
-		
-		btnModificar = new JButton("Modificar");
-		btnModificar.setFont(new Font("Dialog", Font.PLAIN, 14));
-		btnModificar.setBounds(307, 198, 89, 23);
-		contentPane.add(btnModificar);
-		
-		btnEliminar = new JButton("Eliminar");
-		btnEliminar.setFont(new Font("Dialog", Font.PLAIN, 14));
-		btnEliminar.setBounds(407, 198, 89, 23);
-		contentPane.add(btnEliminar);
 
 	}
 }
