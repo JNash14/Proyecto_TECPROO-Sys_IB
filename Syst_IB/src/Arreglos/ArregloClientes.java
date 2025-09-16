@@ -32,4 +32,8 @@ public class ArregloClientes {
 		return null;
 		
 	}
+	public void Eliminar(Clientes x) 
+	{
+		 clien.remove(x);
+	}
 }

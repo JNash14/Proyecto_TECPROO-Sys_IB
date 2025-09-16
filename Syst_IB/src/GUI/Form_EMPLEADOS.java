@@ -9,7 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import Arreglos.ArregloEmpleados;
 import Clases.Empleados;
-import clase.Estudiante;
+//import clase.Estudiante;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
