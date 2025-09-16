@@ -13,8 +13,28 @@ public class ArregloEmpleados {
 		Añadir(new Empleados("Fabricio", "Inca", "fabrinca", "2234"));
 		Añadir(new Empleados("Steven", "Baltazar", "stebal", "4421"));
 	}
+	
 	public void Añadir(Empleados x) {
         emp.add(x);
 	}
+	
+	public int Tamaño() {
+		return emp.size();
+	}
+	
+	public Empleados Obtener(int x) {
+	    return emp.get(x);
+	}
+	
+	public Empleados Buscar(String nom, String ape) {
+		for  (int i=0; i<Tamaño(); i++) {
+			if(Obtener(i).getNom().equalsIgnoreCase(nom) 
+			 && Obtener(i).getApe().equalsIgnoreCase(ape)) {
+				return Obtener(i);
+			}
+		}
+		return null;	
+	}
+	
 	
 }
