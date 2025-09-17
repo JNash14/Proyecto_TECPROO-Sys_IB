@@ -1,0 +1,18 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import Clases.Producto;
+
+public class ArregloProductos {
+public ArrayList<Producto>pro;
+
+public ArregloProductos() {
+	pro = new ArrayList<Producto>();
+	Añadir (new Producto("sa","sr","S"));
+}
+public void Añadir(Producto x) {
+	pro.add(x);
+}
+	
+}

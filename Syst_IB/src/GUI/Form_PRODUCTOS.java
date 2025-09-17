@@ -1,19 +1,26 @@
 package GUI;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Arreglos.ArregloProducto;
+import Clases.Producto;
+
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class Form_PRODUCTOS extends JFrame {
+public class Form_PRODUCTOS extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -81,22 +88,22 @@ public class Form_PRODUCTOS extends JFrame {
 		
 		lblNewLabel_3 = new JLabel("Precio Venta");
 		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_3.setBounds(33, 137, 77, 14);
+		lblNewLabel_3.setBounds(269, 75, 77, 14);
 		contentPane.add(lblNewLabel_3);
 		
 		lblNewLabel_5 = new JLabel("Precio costo");
 		lblNewLabel_5.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_5.setBounds(269, 87, 83, 14);
+		lblNewLabel_5.setBounds(269, 107, 83, 14);
 		contentPane.add(lblNewLabel_5);
 		
 		lblNewLabel_6 = new JLabel("Categoria");
 		lblNewLabel_6.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_6.setBounds(269, 112, 83, 24);
+		lblNewLabel_6.setBounds(31, 137, 83, 24);
 		contentPane.add(lblNewLabel_6);
 		
 		lblNewLabel_7 = new JLabel("Cantidad");
 		lblNewLabel_7.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		lblNewLabel_7.setBounds(269, 143, 83, 14);
+		lblNewLabel_7.setBounds(269, 138, 83, 14);
 		contentPane.add(lblNewLabel_7);
 		
 		lblNewLabel_4 = new JLabel("Productos");
@@ -116,17 +123,17 @@ public class Form_PRODUCTOS extends JFrame {
 		
 		txtPreV = new JTextField();
 		txtPreV.setColumns(10);
-		txtPreV.setBounds(148, 137, 86, 20);
+		txtPreV.setBounds(358, 74, 86, 20);
 		contentPane.add(txtPreV);
 		
 		txtPreC = new JTextField();
 		txtPreC.setColumns(10);
-		txtPreC.setBounds(358, 86, 86, 20);
+		txtPreC.setBounds(358, 106, 86, 20);
 		contentPane.add(txtPreC);
 		
 		txtCate = new JTextField();
 		txtCate.setColumns(10);
-		txtCate.setBounds(358, 111, 86, 20);
+		txtCate.setBounds(148, 137, 86, 20);
 		contentPane.add(txtCate);
 		
 		txtCant = new JTextField();
@@ -142,19 +149,97 @@ public class Form_PRODUCTOS extends JFrame {
 		scrollPane.setViewportView(txtS);
 		
 		btnLista = new JButton("Lista");
+		btnLista.addActionListener(this);
 		btnLista.setFont(new Font("Dialog", Font.PLAIN, 14));
 		btnLista.setBounds(89, 199, 89, 23);
 		contentPane.add(btnLista);
 		
 		btnAgregar = new JButton("Añadir");
+		btnAgregar.addActionListener(this);
 		btnAgregar.setFont(new Font("Dialog", Font.PLAIN, 14));
 		btnAgregar.setBounds(187, 199, 89, 23);
 		contentPane.add(btnAgregar);
 		
 		btnBuscar = new JButton("Buscar");
+		btnBuscar.addActionListener(this);
 		btnBuscar.setFont(new Font("Dialog", Font.PLAIN, 14));
 		btnBuscar.setBounds(286, 199, 89, 23);
 		contentPane.add(btnBuscar);
 
 	}
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btnBuscar) {
+			do_btnBuscar_actionPerformed(e);
+		}
+		if (e.getSource() == btnAgregar) {
+			do_btnAgregar_actionPerformed(e);
+		}
+		if (e.getSource() == btnLista) {
+			do_btnLista_actionPerformed(e);
+		}
+	}
+	int LeerCodigo() {
+		return Integer.parseInt(txtCod.getText());
+	}
+	String LeerProductos() {
+		return txtNomP.getText();
+	}
+	String LeerCategoria() {
+		return txtCate.getText();
+	}
+	double LeerPrecioV() {
+		return Double.parseDouble(txtPreV.getText());
+	}
+	double LeerPrecioC() {
+		return Double.parseDouble(txtPreC.getText());
+	}
+	int LeerCantidad() {
+		return Integer.parseInt(txtCant.getText());
+	}
+	void Imprimir(String s) {
+		txtS.append(s+"\n");
+	}
+	
+	ArregloProducto prod=new ArregloProducto();
+	void Listado() {
+		Imprimir("Cod\tNombre\tCategoria\tPrecio Ven.\tPrecio Cos.\tCantidad");
+		for(int i=0;i <prod.Tamaño();i++){
+			Imprimir(""+prod.Obtener(i).getCod()+"\t"+prod.Obtener(i).getNomp()+
+					"\t"+prod.Obtener(i).getCate()+"\t"+prod.Obtener(i).getPreven()+
+					"\t"+prod.Obtener(i).getPrecos()+"\t"+prod.Obtener(i).getCant());
+			}		
+	}
+	protected void do_btnLista_actionPerformed(ActionEvent e) {
+	txtS.setText("");
+	Listado();
+	Imprimir("Cantidad de Productos: "+prod.Tamaño());
+}
+	protected void do_btnAgregar_actionPerformed(ActionEvent e) {
+		
+	
+		Producto pro =prod.Buscar(LeerProductos(),LeerCategoria());
+	if(pro==null) {
+		Producto pr1 = new Producto(LeerCodigo(),LeerProductos(),LeerCategoria(), 
+				LeerPrecioV(), LeerPrecioC(),LeerCantidad());
+		prod.Añadir(pr1);
+	}
+	else {
+		JOptionPane.showMessageDialog(this, "Producto existente");		
+}
+	
+	}
+	protected void do_btnBuscar_actionPerformed(ActionEvent e) {
+		txtS.setText("");
+		Producto pr =prod.Buscar(LeerProductos(),LeerCategoria());
+		if(pr!=null) 
+		{
+			Imprimir("Cod\tNombre\tCategoria\tPrecio Ven.\tPrecio Cos.\tCantidad");
+			Imprimir(""+pr.getCod()+"\t"+pr.getNomp()+
+					"\t"+pr.getCate()+"\t"+pr.getPreven()+
+					"\t"+pr.getPrecos()+"\t"+pr.getCant());
+		}
+		else {
+			JOptionPane.showMessageDialog(this, "No existe el producto ");
+	}
+		}
 }

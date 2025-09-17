@@ -1,0 +1,32 @@
+package Arreglos;
+
+import java.util.ArrayList;
+
+import Clases.Producto;
+
+public class ArregloProducto {
+	private ArrayList<Producto>pro;
+	public ArregloProducto(){
+		pro=new ArrayList<Producto>();
+		Añadir(new Producto(1020,"arroz","abarrote",3.50,4.00,16));
+		Añadir(new Producto(2030,"Coca Cola","Bebidas",2.50,3.00,12));
+	}
+	public void Añadir(Producto x){
+		pro.add(x);
+	}
+	public int Tamaño(){
+		return pro.size();
+	}
+	public Producto Obtener(int x) {
+		return pro.get(	x);
+	}
+	public Producto Buscar(String nomp,String cate ) {
+		for(int i=0;i<Tamaño();i++) {
+			if(Obtener(i).getNomp().equalsIgnoreCase(nomp)&& 
+					Obtener(i).getCate().equalsIgnoreCase(	cate)) {
+		return Obtener(i);
+			}
+	 }return null;
+	}
+
+}

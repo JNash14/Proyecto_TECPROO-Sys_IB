@@ -1,9 +1,1 @@
-<<<<<<< HEAD
-{"version":1,"cache_data":[{"file_hash":"3c71efa41de21b88","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1757989033084211}]}
-=======
-<<<<<<< HEAD
-{"version":1,"cache_data":[{"file_hash":"3c71efa41de21b88","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1757834665770280}]}
-=======
-{"version":1,"cache_data":[{"file_hash":"3c71efa41de21b88","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1757835937819247}]}
->>>>>>> 8b271163481b685a71e268fb76f50a99a005d6c1
->>>>>>> 27984f215960cf65c3eca3c11ee98412354de447
+{"version":1,"cache_data":[{"file_hash":"e7ce63fa78a1aa6c","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1758169967317625},{"file_hash":"3c71efa41de21b88","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1758166630598217}]}
