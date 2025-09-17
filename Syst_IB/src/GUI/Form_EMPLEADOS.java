@@ -119,9 +119,25 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		txtS = new JTextArea();
 		scrollPane.setViewportView(txtS);
 		
+		btnEliminar = new JButton("ELIMINAR");
+		btnEliminar.addActionListener(this);
+		btnEliminar.setBounds(318, 32, 89, 23);
+		contentPane.add(btnEliminar);
+		
+		btnModifcar = new JButton("MODIFICAR");
+		btnModifcar.addActionListener(this);
+		btnModifcar.setBounds(318, 61, 89, 23);
+		contentPane.add(btnModifcar);
+		
 		
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == btnModifcar) {
+			do_btnModifcar_actionPerformed(e);
+		}
+		if (e.getSource() == btnEliminar) {
+			do_btnEliminar_actionPerformed(e);
+		}
 		if (e.getSource() == btnNewButton_2) {
 			do_btnNewButton_3_actionPerformed(e);
 		}
@@ -158,6 +174,8 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 	}
 	ArregloEmpleados ae=new ArregloEmpleados();
 	private JButton btnNewButton_2;
+	private JButton btnEliminar;
+	private JButton btnModifcar;
 	void Listado() {
 		Imprimir("Nombres\tApellido\tUsuario\tContraseña");
 		for (int i=0; i<ae.Tamaño(); i++) {
@@ -177,5 +195,20 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		txtS.setText("");
 		Listado();
 		Imprimir("Cantidad de empleados es: " + ae.Tamaño());
+	}
+	protected void do_btnEliminar_actionPerformed(ActionEvent e) {
+		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
+		if(emp!=null) ae.Eliminar(emp);
+		else JOptionPane.showMessageDialog(this, "No existe el empleado");
+	}
+	
+	
+	protected void do_btnModifcar_actionPerformed(ActionEvent e) {
+		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
+		if(emp!=null) {
+			emp.setNom(LeerNombre());
+			emp.setApe(LeerApellidos();
+		}
+		else JOptionPane.showMessageDialog(this, "No existe el empleado");
 	}
 }

@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-2025/09/16-19:40:35.876 22c0 Reusing MANIFEST C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
-2025/09/16-19:40:35.877 22c0 Recovering log #13
-2025/09/16-19:40:35.877 22c0 Reusing old log C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000013.log 
-=======
-2025/09/15-23:41:29.522 568 Table #4: 2 entries OK
-2025/09/15-23:41:29.527 568 Archiving C:\Users\J.Nash\Desktop\Clonnn\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
-2025/09/15-23:41:29.531 568 **** Repaired leveldb C:\Users\J.Nash\Desktop\Clonnn\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database; recovered 1 files; 191 bytes. Some data may have been lost. ****
->>>>>>> 76be76de9ff6a9f22fc6d1e4de25c48fae7c935d
+2025/09/17-10:55:12.047 1070 Log #13: 3 ops saved to Table #14 OK
+2025/09/17-10:55:12.049 1070 Archiving C:\Users\Chamoy\Desktop\Minimarket 4\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000013.log: OK
+2025/09/17-10:55:12.050 1070 Table #4: 2 entries OK
+2025/09/17-10:55:12.050 1070 Table #10: 4 entries OK
+2025/09/17-10:55:12.050 1070 Table #14: 3 entries OK
+2025/09/17-10:55:12.056 1070 Archiving C:\Users\Chamoy\Desktop\Minimarket 4\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
+2025/09/17-10:55:12.066 1070 **** Repaired leveldb C:\Users\Chamoy\Desktop\Minimarket 4\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database; recovered 3 files; 590 bytes. Some data may have been lost. ****

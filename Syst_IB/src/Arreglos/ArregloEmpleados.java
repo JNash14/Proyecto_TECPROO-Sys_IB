@@ -36,5 +36,8 @@ public class ArregloEmpleados {
 		return null;	
 	}
 	
+	public void Eliminar(Empleados x) {
+		emp.remove(x);
+	}
 	
 }
