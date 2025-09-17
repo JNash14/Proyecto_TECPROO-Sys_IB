@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.eclipse.jdt.core.codeComplete.argumentPrefixes=
 org.eclipse.jdt.core.codeComplete.argumentSuffixes=
 org.eclipse.jdt.core.codeComplete.fieldPrefixes=
@@ -9,6 +10,12 @@ org.eclipse.jdt.core.codeComplete.staticFieldPrefixes=
 org.eclipse.jdt.core.codeComplete.staticFieldSuffixes=
 org.eclipse.jdt.core.codeComplete.staticFinalFieldPrefixes=
 org.eclipse.jdt.core.codeComplete.staticFinalFieldSuffixes=
+=======
+org.eclipse.jdt.core.codeComplete.camelCaseMatch=enabled
+org.eclipse.jdt.core.codeComplete.deprecationCheck=disabled
+org.eclipse.jdt.core.codeComplete.subwordMatch=enabled
+org.eclipse.jdt.core.codeComplete.suggestStaticImports=enabled
+>>>>>>> 76be76de9ff6a9f22fc6d1e4de25c48fae7c935d
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=23
 org.eclipse.jdt.core.compiler.compliance=23
