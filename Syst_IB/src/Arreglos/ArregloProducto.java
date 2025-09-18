@@ -28,5 +28,8 @@ public class ArregloProducto {
 			}
 	 }return null;
 	}
+	public void Eliminar(Producto x) {
+		pro.remove(x);
+	}
 
 }

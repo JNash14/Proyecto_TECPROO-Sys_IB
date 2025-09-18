@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-2025/09/16-19:48:13.770 1fb4 Reusing MANIFEST C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/09/16-19:48:13.837 1fb4 Recovering log #3
-2025/09/16-19:48:13.839 1fb4 Reusing old log C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
-=======
-2025/09/15-23:41:29.570 5934 Creating DB C:\Users\J.Nash\Desktop\Clonnn\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
-2025/09/15-23:41:29.586 5934 Reusing MANIFEST C:\Users\J.Nash\Desktop\Clonnn\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
->>>>>>> 76be76de9ff6a9f22fc6d1e4de25c48fae7c935d
+2025/09/17-21:04:24.003 f0c Reusing MANIFEST C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/09/17-21:04:24.009 f0c Recovering log #3
+2025/09/17-21:04:24.011 f0c Reusing old log C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 

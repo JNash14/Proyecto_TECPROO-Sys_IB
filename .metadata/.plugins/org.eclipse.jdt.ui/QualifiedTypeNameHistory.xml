@@ -1,23 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StrictMath"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="Clases.Empleados"/>
-    <fullyQualifiedTypeName name="GUI.Form_PRODUCTOS"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.RETURN"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="Arreglos.ArregloProducto"/>
-    <fullyQualifiedTypeName name="Clases.Producto"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-=======
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="Arreglos.ArregloEmpleados"/>
-    <fullyQualifiedTypeName name="Clases.Empleados"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="Clases.Clientes"/>
->>>>>>> 76be76de9ff6a9f22fc6d1e4de25c48fae7c935d
 </qualifiedTypeNameHistroy>
