@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+=======
+    <fullyQualifiedTypeName name="Clases.Empleados"/>
+>>>>>>> 26b7646531db6b8814e6285678f6e3fbbd20171f
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>

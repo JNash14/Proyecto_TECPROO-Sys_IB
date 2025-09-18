@@ -1308,9 +1308,15 @@
 2025-09-16 01:44:19,462 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:425) - Closing ThreadHolder
 2025-09-16 01:44:19,463 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:430) - Shutting down ThreadSupplier
 >>>>>>> 76be76de9ff6a9f22fc6d1e4de25c48fae7c935d
+<<<<<<< HEAD
 2025-09-16 21:22:10,904 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-09-16 21:22:12,569 [Worker-2: Decoration Calculation] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:368) - Instantiated org.burningwave.core.SLF4JManagedLoggerRepository
 2025-09-16 21:22:12,570 [Worker-2: Decoration Calculation] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:369) - 
+=======
+2025-09-17 10:55:02,246 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-09-17 10:55:03,554 [Worker-3: EGit Hidden Resources Clean-up] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:368) - Instantiated org.burningwave.core.SLF4JManagedLoggerRepository
+2025-09-17 10:55:03,558 [Worker-3: EGit Hidden Resources Clean-up] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:369) - 
+>>>>>>> 26b7646531db6b8814e6285678f6e3fbbd20171f
 
 	Configuration values for static components:
 
@@ -1402,6 +1408,7 @@
 			6000
 
 
+<<<<<<< HEAD
 2025-09-16 21:22:12,573 [Worker-2: Decoration Calculation] INFO  o.b.core.jvm.BufferHandler - (BufferHandler.java:127) - default buffer size: 1024 bytes
 2025-09-16 21:22:12,574 [Worker-2: Decoration Calculation] INFO  o.b.core.jvm.BufferHandler - (BufferHandler.java:141) - default allocation mode: ByteBuffer::allocateDirect
 2025-09-16 21:22:12,578 [Worker-2: Decoration Calculation] INFO  org.burningwave.core.Cache - (Cache.java:76) - Building cache
@@ -1626,3 +1633,17 @@
 2025-09-17 21:16:15,421 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:420) - Stopping all threads monitoring thread
 2025-09-17 21:16:15,422 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:425) - Closing ThreadHolder
 2025-09-17 21:16:15,422 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:430) - Shutting down ThreadSupplier
+=======
+2025-09-17 10:55:03,562 [Worker-3: EGit Hidden Resources Clean-up] INFO  o.b.core.jvm.BufferHandler - (BufferHandler.java:127) - default buffer size: 1024 bytes
+2025-09-17 10:55:03,564 [Worker-3: EGit Hidden Resources Clean-up] INFO  o.b.core.jvm.BufferHandler - (BufferHandler.java:141) - default allocation mode: ByteBuffer::allocateDirect
+2025-09-17 10:55:03,569 [Worker-3: EGit Hidden Resources Clean-up] INFO  org.burningwave.core.Cache - (Cache.java:76) - Building cache
+2025-09-17 10:55:03,608 [Worker-3: EGit Hidden Resources Clean-up] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:443) - org.burningwave.core.assembler.StaticComponentContainer initialized in 0.2138241 seconds
+2025-09-17 12:16:02,907 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:391) - ... Waiting for all tasks ending
+2025-09-17 12:16:02,908 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:397) - Closing all component containers
+2025-09-17 12:16:02,910 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:403) - Closing FileSystemHelper
+2025-09-17 12:16:02,910 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:409) - ... Waiting for all tasks ending before shutting down the BackgroundExecutor
+2025-09-17 12:16:02,911 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:414) - Shutting down BackgroundExecutor
+2025-09-17 12:16:02,912 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:420) - Stopping all threads monitoring thread
+2025-09-17 12:16:02,912 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:425) - Closing ThreadHolder
+2025-09-17 12:16:02,913 [Burningwave - Resource releaser] INFO  o.b.c.a.StaticComponentContainer - (StaticComponentContainer.java:430) - Shutting down ThreadSupplier
+>>>>>>> 26b7646531db6b8814e6285678f6e3fbbd20171f

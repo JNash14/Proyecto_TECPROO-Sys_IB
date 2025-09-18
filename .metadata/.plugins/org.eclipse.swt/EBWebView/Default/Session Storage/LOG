@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 2025/09/17-21:04:24.392 f0c Reusing MANIFEST C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
 2025/09/17-21:04:24.393 f0c Recovering log #3
 2025/09/17-21:04:24.395 f0c Reusing old log C:\Users\USUARIO\OneDrive\Escritorio\TRABJOOOO\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+=======
+2025/09/17-10:55:12.646 2634 Creating DB C:\Users\Chamoy\Desktop\Minimarket 4\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage since it was missing.
+2025/09/17-10:55:12.658 2634 Reusing MANIFEST C:\Users\Chamoy\Desktop\Minimarket 4\Proyecto_TECPROO-Sys_IB\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+>>>>>>> 26b7646531db6b8814e6285678f6e3fbbd20171f
