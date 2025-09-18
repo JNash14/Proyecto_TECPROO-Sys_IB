@@ -10,6 +10,7 @@ import javax.swing.border.EmptyBorder;
 
 import Arreglos.ArregloClientes;
 import Clases.Clientes;
+import Clases.UbicacionUbigeo;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -20,6 +21,7 @@ import javax.swing.JTextArea;
 import javax.swing.JComboBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.DefaultComboBoxModel;
 
 public class Form_CLIENTES extends JFrame implements ActionListener {
 
@@ -141,33 +143,42 @@ public class Form_CLIENTES extends JFrame implements ActionListener {
 		btnEliminar.setBounds(439, 226, 89, 31);
 		contentPane.add(btnEliminar);
 		
-		JComboBox cbDepartamento = new JComboBox();
-		cbDepartamento.setBounds(99, 170, 113, 22);
+		cbDepartamento = new JComboBox();
+		cbDepartamento.addActionListener(this);
+		cbDepartamento.setModel(new DefaultComboBoxModel(new String[] {"", "LIMA", "ICA", "JUNIN"}));
+		cbDepartamento.setBounds(53, 176, 113, 22);
 		contentPane.add(cbDepartamento);
 		
-		JComboBox cbProvincia = new JComboBox();
-		cbProvincia.setBounds(223, 170, 113, 22);
-		contentPane.add(cbProvincia);
+		cbProv = new JComboBox();
+		cbProv.addActionListener(this);
+		cbProv.setBounds(176, 176, 132, 22);
+		contentPane.add(cbProv);
 		
-		JComboBox cbDistrito = new JComboBox();
-		cbDistrito.setBounds(346, 170, 113, 22);
-		contentPane.add(cbDistrito);
+		cbDist = new JComboBox();
+		cbDist.setBounds(318, 176, 132, 22);
+		contentPane.add(cbDist);
 		
 		JLabel lblDepartamento = new JLabel("Departamento");
-		lblDepartamento.setBounds(124, 155, 88, 14);
+		lblDepartamento.setBounds(78, 158, 88, 14);
 		contentPane.add(lblDepartamento);
 		
 		JLabel lblProvincia = new JLabel("Provincia");
-		lblProvincia.setBounds(256, 155, 64, 14);
+		lblProvincia.setBounds(209, 158, 64, 14);
 		contentPane.add(lblProvincia);
 		
 		JLabel lblDistrito = new JLabel("Distrito");
-		lblDistrito.setBounds(383, 155, 64, 14);
+		lblDistrito.setBounds(365, 158, 64, 14);
 		contentPane.add(lblDistrito);
 
 	}
 	
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == cbProv) {
+			do_cbProv_actionPerformed(e);
+		}
+		if (e.getSource() == cbDepartamento) {
+			do_cbDepartamento_actionPerformed(e);
+		}
 		if (e.getSource() == btnEliminar) {
 			do_btnEliminar_actionPerformed(e);
 		}
@@ -223,6 +234,9 @@ public class Form_CLIENTES extends JFrame implements ActionListener {
 		private JButton btnBuscar;
 		private JButton btnModificar;
 		private JButton btnEliminar;
+		private JComboBox cbDepartamento;
+		private JComboBox cbProv;
+		private JComboBox cbDist;
 		void listado()
 		{
 			Imprimir("DNI\tAPELLIDO\tNOMBRE\tCELULAR\tDIRECCIÓN");
@@ -278,5 +292,18 @@ public class Form_CLIENTES extends JFrame implements ActionListener {
 			ac.Eliminar(cl);		
 		else
 			JOptionPane.showMessageDialog(this, "No existe el DNI");
+		
+	}
+	
+	protected void do_cbDepartamento_actionPerformed(ActionEvent e) 
+	{		
+		String departamento = cbDepartamento.getSelectedItem().toString();
+	    cbProv.setModel(UbicacionUbigeo.getProvincias(departamento));	
+	}
+	
+	protected void do_cbProv_actionPerformed(ActionEvent e) 
+	{
+		String provincia = cbProv.getSelectedItem().toString();
+	    cbDist.setModel(UbicacionUbigeo.getDistritos(provincia));
 	}
 }
