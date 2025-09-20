@@ -8,9 +8,9 @@ public class ArregloClientes {
 	public ArregloClientes()
 	{
 		clien = new ArrayList<Clientes>();
-		Adicionar(new Clientes(12546987, "Castro", "Carlos", "966845124", "Jr. Lima 1547"));//index 0
-		Adicionar(new Clientes(84569585, "Quispe", "Victoria", "986564477", "Jr. Camaná 147"));//index 1
-		Adicionar(new Clientes(75469521, "Sipán", "Guillermo", "978456321", "Av. 2 de mayo 1987"));//index 2
+		Adicionar(new Clientes(12546987, 966845124, "Castro", "Carlos", "Jr. Lima 1547"));//index 0
+		Adicionar(new Clientes(84569585, 986564477, "Quispe", "Victoria", "Jr. Camaná 147"));//index 1
+		Adicionar(new Clientes(75469521, 978456321, "Sipán", "Guillermo", "Av. 2 de mayo 1987"));//index 2
 	}
 	
 	public void Adicionar(Clientes c)

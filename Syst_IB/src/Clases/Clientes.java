@@ -1,16 +1,19 @@
 package Clases;
 
 public class Clientes {
-	private int dni;
-	private String apellidos, nombres, celular, direccion;
-	public Clientes(int dni, String apellidos, String nombres, String celular, String direccion) {
+	private int dni,celu;
+	private String apellidos, nombres, direccion;	
+	
+	//generando contructor
+	public Clientes(int dni, int celu, String apellidos, String nombres, String direccion) {
 		super();
 		this.dni = dni;
+		this.celu = celu;
 		this.apellidos = apellidos;
 		this.nombres = nombres;
-		this.celular = celular;
 		this.direccion = direccion;
 	}
+	//generando Get and Set
 	public int getDni() {
 		return dni;
 	}
@@ -28,12 +31,12 @@ public class Clientes {
 	}
 	public void setNombres(String nombres) {
 		this.nombres = nombres;
+	}	
+	public int getCelu() {
+		return celu;
 	}
-	public String getCelular() {
-		return celular;
-	}
-	public void setCelular(String celular) {
-		this.celular = celular;
+	public void setCelu(int celu) {
+		this.celu = celu;
 	}
 	public String getDireccion() {
 		return direccion;

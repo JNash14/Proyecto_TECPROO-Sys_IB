@@ -207,7 +207,7 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
 		if(emp!=null) {
 			emp.setNom(LeerNombre());
-			emp.setApe(LeerApellidos();
+			emp.setApe(LeerApellidos());
 		}
 		else JOptionPane.showMessageDialog(this, "No existe el empleado");
 	}
