@@ -61,6 +61,7 @@ public class Principal extends JFrame implements ActionListener {
 		mnNewMenu.add(mntmNewMenuItem);
 		
 		mntmNewMenuItem_1 = new JMenuItem("Empleados");
+		mntmNewMenuItem_1.addActionListener(this);
 		mnNewMenu.add(mntmNewMenuItem_1);
 		
 		mntmNewMenuItem_2 = new JMenuItem("Productos");
@@ -84,6 +85,9 @@ public class Principal extends JFrame implements ActionListener {
 
 	}
 	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == mntmNewMenuItem_1) {
+			do_mntmNewMenuItem_1_actionPerformed(e);
+		}
 		if (e.getSource() == mntmNewMenuItem) {
 			do_mntmNewMenuItem_actionPerformed(e);
 		}
@@ -91,5 +95,9 @@ public class Principal extends JFrame implements ActionListener {
 	protected void do_mntmNewMenuItem_actionPerformed(ActionEvent e) {
 		FormCliente cli=new FormCliente();
 		cli.setVisible(true);
+	}
+	protected void do_mntmNewMenuItem_1_actionPerformed(ActionEvent e) {
+		Form_EMPLEADOS emp=new Form_EMPLEADOS();
+		emp.setVisible(true);
 	}
 }

@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import Arreglos.ArregloEmpleados;
+import Clases.Clientes;
 import Clases.Empleados;
 //import clase.Estudiante;
 
@@ -149,13 +150,28 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		}
 	}
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
-		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
-		if(emp==null)
+		try
+			{			
+			if (txtNom.getText().isEmpty() || txtApe.getText().isEmpty() || txtUs.getText().isEmpty() || 
+				txtCon.getText().isEmpty()) 
+			{
+	            JOptionPane.showMessageDialog(this, "Complete todos los campos requeridos");
+	            return;
+	        }
+			Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
+			if(emp==null)
+			{
+				Empleados e1=new Empleados(LeerNombre(), LeerApellidos(), LeerUsuario(), LeerContraseña());
+				ae.Añadir(e1);
+			}
+			else JOptionPane.showMessageDialog(this, "Existe el codigo");
+		} 
+		catch (Exception ex) 
 		{
-			Empleados e1=new Empleados(LeerNombre(), LeerApellidos(), LeerUsuario(), LeerContraseña());
-			ae.Añadir(e1);
+			JOptionPane.showMessageDialog(this, "Campos necesarios");
 		}
-		else JOptionPane.showMessageDialog(this, "Existe el codigo");	
+			
+			
 	}
 	String LeerNombre() {
 		return txtNom.getText();
@@ -180,16 +196,23 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		Imprimir("Nombres\tApellido\tUsuario\tContraseña");
 		for (int i=0; i<ae.Tamaño(); i++) {
 			Imprimir(""+ae.Obtener(i).getNom()+"\t"+ae.Obtener(i).getApe()+
-					"t"+ae.Obtener(i).getUs()+"t"+ae.Obtener(i).getCon());
+					"\t"+ae.Obtener(i).getUs()+"\t"+ae.Obtener(i).getCon());
 		}
 	}
 	protected void do_btnNewButton_1_actionPerformed(ActionEvent e) {
-		Empleados emp= ae.Buscar(LeerUsuario(), LeerContraseña());
-		if(emp!=null) {
-			Imprimir("Nombres\tApellidos\\tUsuario\tContraseña");
-			Imprimir(""+emp.getNom()+"\t"+emp.getApe()+"\t"+emp.getUs()+"\t"+emp.getCon());
+		try {
+			Empleados emp= ae.Buscar(LeerUsuario(), LeerContraseña());
+			if(emp!=null) {
+				Imprimir("Nombres\tApellidos\tUsuario\tContraseña");
+				Imprimir(""+emp.getNom()+"\t"+emp.getApe()+"\t"+emp.getUs()+"\t"+emp.getCon());
+			}
+			else JOptionPane.showMessageDialog(this, "No existe el Usuario");
+		} 
+		catch (Exception e2) {
+			JOptionPane.showMessageDialog(this, "Ingresa los datos necesarios");
 		}
-		else JOptionPane.showMessageDialog(this, "No existe el Usuario");	
+		
+		
 	}
 	protected void do_btnNewButton_3_actionPerformed(ActionEvent e) {
 		txtS.setText("");
@@ -197,18 +220,34 @@ public class Form_EMPLEADOS extends JFrame implements ActionListener {
 		Imprimir("Cantidad de empleados es: " + ae.Tamaño());
 	}
 	protected void do_btnEliminar_actionPerformed(ActionEvent e) {
-		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
-		if(emp!=null) ae.Eliminar(emp);
-		else JOptionPane.showMessageDialog(this, "No existe el empleado");
+		try {
+			int opcion = JOptionPane.showConfirmDialog(this, "¿Está seguro de eliminar al cliente?");
+			if (opcion == JOptionPane.YES_OPTION);
+			Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
+			if(emp!=null) ae.Eliminar(emp);
+			else JOptionPane.showMessageDialog(this, "No existe el empleado");
+		}
+		catch (Exception e3) {
+			JOptionPane.showMessageDialog(this, "No existe el empleado");
+		}
+		
 	}
 	
 	
 	protected void do_btnModifcar_actionPerformed(ActionEvent e) {
-		Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
-		if(emp!=null) {
-			emp.setNom(LeerNombre());
-			emp.setApe(LeerApellidos());
+		try {
+			Empleados emp=ae.Buscar(LeerNombre(),LeerApellidos());
+			if(emp!=null) {
+				emp.setNom(LeerNombre());
+				emp.setApe(LeerApellidos());
+			}
+			else {
+				JOptionPane.showMessageDialog(this, "Complete todos los campos obligatorios");
+			}
+		} 
+		catch (Exception e4) {
+			JOptionPane.showMessageDialog(this, "Verificar que todos los datos son correctos.");
 		}
-		else JOptionPane.showMessageDialog(this, "No existe el empleado");
+		
 	}
-}
+}D
