@@ -11,13 +11,14 @@ import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class Form_StockProducto extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtStock;
-	private JTextField txtProducto;
 
 	/**
 	 * Launch the application.
@@ -59,22 +60,26 @@ public class Form_StockProducto extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		txtStock = new JTextField();
-		txtStock.setBounds(75, 39, 96, 19);
+		txtStock.setBounds(119, 39, 96, 19);
 		contentPane.add(txtStock);
 		txtStock.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Modificar Stock");
-		btnNewButton.setBounds(197, 38, 85, 21);
+		btnNewButton.setBounds(268, 38, 110, 21);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel("Producto");
-		lblNewLabel_1.setBounds(10, 10, 45, 13);
+		JLabel lblNewLabel_1 = new JLabel("Selecciona Producto");
+		lblNewLabel_1.setBounds(10, 10, 110, 13);
 		contentPane.add(lblNewLabel_1);
 		
-		txtProducto = new JTextField();
-		txtProducto.setBounds(75, 7, 96, 19);
-		contentPane.add(txtProducto);
-		txtProducto.setColumns(10);
+		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Huevo", "Carne", "Arroz"}));
+		comboBox.setBounds(130, 9, 110, 19);
+		contentPane.add(comboBox);
+		
+		JButton btnNewButton_1 = new JButton("Ver producto");
+		btnNewButton_1.setBounds(258, 6, 122, 20);
+		contentPane.add(btnNewButton_1);
 
 	}
 }
